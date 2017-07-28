@@ -1,0 +1,1 @@
+Look at the [tests.py](./tests.py) to know how to use and it works
