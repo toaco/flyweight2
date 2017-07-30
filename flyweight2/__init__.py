@@ -5,6 +5,8 @@ import weakref
 
 import types
 
+__version__ = '0.0.2'
+
 
 def new_method_proxy(func):
     def inner(self, *args):
