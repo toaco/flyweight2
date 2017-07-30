@@ -24,4 +24,11 @@ matrix:
     - python: pypy
     - python: pypy3
   fast_finish: true
-script: py.test tests.py
+install:
+  - pip install pytest pytest-cov
+  - pip install coveralls
+script: py.test tests.py -v --cov flyweight2 --cov-report term-missing
+after_success:
+  - coveralls
+notifications:
+  email: never
